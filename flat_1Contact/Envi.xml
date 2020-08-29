@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<world>
+  <robot name="HRP2" file="/home/motion/Klampt-examples/data/robots/hrp2.rob" config="36	3.091737 -0.853984 0.532885 -0.676759 -0.364740 -0.576471 0.521123 0.084327 0.384398 -0.027372 -0.290056 0.583607 -0.200328 0.600825 0.733038 0.923450 -1.186668 -0.089821 -0.189629 -0.033876 0.785398 0.785398 -3.141593 -1.658063 -1.605703 -2.391101 1.605703 1.605703 0.279253 -0.188478 1.500212 0.509967 -0.928049 0.688596 0.426843 0.279253 "/>
+  <terrain file="/home/motion/Klampt-examples/data/terrains/block.off" scale="2.5 2.5 20" translation= "0.0 0.0 0.0"/>
+  <terrain file="/home/motion/Klampt-examples/data/terrains/cube.off" scale="1 2 2" translation="4.0 -1.5 0.0">
+     <display color="0.4 0.3 0.2"/>
+  </terrain>
+  <simulation>
+    <globals adaptiveTimeStepping="1" />
+    <robot index="0" body="11">  <!-- right foot -->
+       <geometry kFriction="5.0" kRestitution="0.0" padding="0.005" stiffness="80000" damping="20000" />
+    </robot>
+    <robot index="0" body="17">  <!-- left foot -->
+       <geometry kFriction="5.0" kRestitution="0.0" padding="0.005" stiffness="80000" damping="20000" />
+    </robot>
+    <robot index="0" body="27">  <!-- left foot -->
+       <geometry kFriction="5.0" kRestitution="0.0" padding="0.005" stiffness="80000" damping="20000" />
+    </robot>
+    <robot index="0" body="34">  <!-- left foot -->
+       <geometry kFriction="5.0" kRestitution="0.0" padding="0.005" stiffness="80000" damping="20000" />
+    </robot>
+  </simulation>
+</world>
